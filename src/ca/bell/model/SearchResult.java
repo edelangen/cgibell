@@ -18,6 +18,13 @@ import java.util.ArrayList;
  * limitations under the License.
  */
 
+/**
+* This class provides the top level container for the return of the itunes search operation
+*
+* @author  Edward de Langen
+* @version 1.0
+* @since   2019-05-08
+*/
 public class SearchResult {
 	private Integer resultCount;
 	private ArrayList<SearchResultItem> results;

@@ -38,6 +38,14 @@ import java.util.logging.*;
  * limitations under the License.
  */
 
+/**
+* This class provides restful web service access to the itunes APIs
+*
+* @author  Edward de Langen
+* @version 1.0
+* @since   2019-05-08
+*/
+
 @Path("/itunes")
 public class ItunesService {
 
@@ -49,6 +57,16 @@ public class ItunesService {
 	
 	private static final String ITUNES_SEARCH_URL = "https://itunes.apple.com/search";
 
+	
+	/**
+	 * Web service search which will call itunes search method 
+	 * combining first name and last name into the term parameter
+	 *
+	 * @param  artistFirstName  The first name of an artist. Parameter is not mandatory
+	 * @param  artistLastName 	The last name of an artist. Parameter is not mandatory
+	 * @return      			Response which will have the JSON serialized array of QueryResult objects
+	 */
+	
 	@GET
 	@Path("/search")
 	@Produces(MediaType.APPLICATION_JSON)

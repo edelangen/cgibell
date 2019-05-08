@@ -16,6 +16,13 @@ package ca.bell.model;
  * limitations under the License.
  */
 
+/**
+* This class provides the query results for itunes searches
+*
+* @author  Edward de Langen
+* @version 1.0
+* @since   2019-05-08
+*/
 public class QueryResult {
 
 	private String artistName;
